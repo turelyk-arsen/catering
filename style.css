@@ -1,0 +1,189 @@
+*:not(input) {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --black: rgb(99, 99, 99);
+    --fontColor: white;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--fontColor);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 10px 30px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+a:hover {
+    background-color: var(--black);
+    color: var(--fontColor);
+}
+
+nav {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Playfair Display";
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#nameImage {
+    position: absolute;
+    bottom: 15rem;
+    left: 10px;
+    font-size: 10vw;
+    opacity: 70%;
+    letter-spacing: 6px;
+}
+
+#about,
+#menu,
+#contact {
+    margin: 30px 10px 10px 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+[src="img/tablesetting2.jpg"] {
+    display: none;
+}
+
+section h1 {
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+section h4 {
+    line-height: 1.5;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+#parag {
+    opacity: 70%;
+    padding: 10px 0 40px 0;
+
+}
+
+#menu h4 {
+    text-align: left;
+}
+
+#textblue {
+    color: rgb(106, 106, 255);
+    padding: 20px 0;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input:focus {
+    border: 2px solid salmon;
+    border-radius: 5px;
+    color: var(--black);
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    #nameImage {
+        position: absolute;
+        bottom: -40px;
+        left: 10px;
+        font-size: 30px;
+        opacity: 70%;
+        letter-spacing: 6px;
+    }
+
+    #about,
+    #menu {
+        margin: 50px auto;
+        width: 80%;
+        display: flex;
+    }
+
+    #about p {
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    [src="img/tablesetting2.jpg"] {
+        display: block;
+        opacity: 70%;
+        width: 500px;
+        height: 750px;
+    }
+
+    #contact {
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    section article {
+        width: 40vw;
+    }
+
+    section div {
+        width: 40vw;
+        opacity: 75%;
+    }
+
+}
